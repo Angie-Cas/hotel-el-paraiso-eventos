@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+/* Cabecera */
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Imagen de cabecera */
+.cabecera {
+    block-size: 100vh;
+    background: url("../img/cabecera.jpg") no-repeat;
+    background-position: 75%;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overley de imagen de cabecera */
+.cabecera::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    background: black;
+    opacity: 0.07;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+}
+
+/* Wrapper de cabecera para centrar contenido */
+.cabecera-wrapper {
+    inline-size: 70%;
+    block-size: 938px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+/* Wrapper de logo para modificar su width percentage respecto a si mismo */
+.hotel-paraiso-logo-wrapper {
+    display: inline-block;
+    inline-size: 280px;
+}
+
+/* Logo */
+.hotel-paraiso-logo {
+    margin-block-start: 43px;
+    inline-size: 70%;
+}
+
+/* Wrapper de "Un lugar especial" */
+.cabecera-texto-1-wrapper {
+    margin: auto;
+    display: block;
+    padding-block-start: 100px;
+}
+
+/* "Un lugar especial" */
+.cabecera-texto-1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-inline: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Lineas de decoracion */
+ .cabecera-texto-1::before {
+    content: '';
+    display: inline-block;
+    inline-size: 50px;
+    block-size: 2px;
+    background: white;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 0px;
+}
+
+.cabecera-texto-1::after {
+    content: '';
+    display: block;
+    inline-size: 50px;
+    block-size: 2px;
+    background: white;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 50%;
+}
+
+/* "Tu evento en el paraiso" */
+.cabecera-texto-2 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    margin-block: 10px 108px;
+    line-height: 70px;
+}
+
+/* Boton de "Contactanos" */
+.cabecera-boton {
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 20px 124px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+.cabecera-boton:hover {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+/* Seccion de Instalaciones */
+.instalaciones {
+    margin-block-end: 140px;
+}
+
+.instalaciones-wrapper {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.instalaciones h2 {
+    margin-block-start: 125px;
+    font-size: 30px;
+}
+
+.instalaciones-wrapper img {
+    margin-block-start: 20px;
+    margin-inline-end: 30px;
+    border: 0;
+    position: relative;
+}
+
+.instalaciones-wrapper img::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    background: black;
+    opacity: 0.07;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+}
+
+.instalaciones-wrapper p {
+    font-size: 1.25em;
+    margin-block-end: 50px;
+}
+
+
+@media (min-width: 1024px) {
+    /* Centrar imagen de cabecera */
+    .cabecera {
+        background-position: center;
+    }
+
+    .cabecera-wrapper {
+        inline-size: 50%;
+    }
+
+    .cabecera-texto-1-wrapper {
+        padding-block-start: 188px;
+    }
+
+    .hotel-paraiso-logo {
+        inline-size: 100%;
+    }
+
+    .cabecera-texto-2 {
+        margin-block-end: 131px;
+    }
+
+    .instalaciones-wrapper p {
+        width: 60%;
+        margin: auto;
+        font-size: 19px;
+    }
+
+    .instalaciones-wrapper img {
+        inline-size: 22%;
+        margin-block-start: 65px;
+    }
+    
+    
+}
