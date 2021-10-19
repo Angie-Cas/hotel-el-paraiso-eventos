@@ -16,7 +16,7 @@ body {
     background-size: cover;
     margin: 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden6
     z-index: 1;
 }
 
@@ -111,6 +111,7 @@ body {
     font-weight: 800;
     margin-block: 10px 108px;
     line-height: 70px;
+    color: white;
 }
 
 /* Boton de "Contactanos" */
@@ -121,9 +122,9 @@ body {
     padding: 20px 124px;
     color: white;
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
     font-size: 1.15em;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 .cabecera-boton:hover {
@@ -135,7 +136,8 @@ body {
 
 /* Contenedor general*/
 .instalaciones {
-    margin-block-end: 140px;
+    margin-block-end: 121px;
+    margin-block-start: 120px;
 }
 
 /* Contenedor de contenido */
@@ -144,15 +146,15 @@ body {
     text-align: center;
 }
 
-.instalaciones h2 {
-    margin-block-start: 125px;
+h2 {
     font-size: 1.57em;
     font-weight: normal;
     position: relative;
     display: inline-block;
+    margin-block-start: 0;
 }
 
-.instalaciones h2::after {
+h2::after {
     content: '';
     display: inline-block;
     inline-size: 50px;
@@ -163,6 +165,13 @@ body {
     inset-inline-start: 0;
 }
 
+.instalaciones-wrapper p {
+    font-size: 1em;
+    margin-block-end: 50px;
+    color: #707070;
+    padding-inline: 30px;
+}
+
 .instalaciones-wrapper img {
     margin-block-start: 20px;
     border: 0;
@@ -171,12 +180,322 @@ body {
 
 }
 
-.instalaciones-wrapper p {
-    font-size: 1em;
-    margin-block-end: 50px;
-    color: #707070;
-    padding-inline: 30px;
+/*  --------- SLIDER --------- */
+.slider {
+    position: relative;
+    margin-block-end: 120px;
 }
+
+/* Slider */
+scroll-container {
+    inline-size: 100%;
+    block-size: 600px;
+    overflow: hidden;
+    display: block;
+    scroll-behavior: smooth; /* No soportado en Chrome */
+}
+
+scroll-container .imagen-principal {
+    inline-size: 100%;
+    block-size: 300px;
+    object-fit: cover;
+}
+
+scroll-page {
+    display: block;
+}
+
+.slider-info {
+    background: #f2ece6;
+    block-size: 300px;
+    margin-block-start: -4px;
+    inline-size: 100%;
+}
+
+.slider-info-container {
+    inline-size: 50%;
+    margin: auto;
+    text-align: center;
+    color: #601A39;
+    font-size: 1.3em;
+    padding-block-start: 20px;
+}
+
+#slider-pagina-3 {
+    filter: brightness(0.9);
+}
+
+.icono {
+    inline-size: 12%;
+    margin-block-start: 20px;
+}
+
+.slider-info-container p {
+    margin-block-start: 10px;
+}
+
+/* Navegador de slider */
+.slider-bullet-list {
+    margin: auto;
+    background: white;
+    inline-size: 25px;
+    padding: 10px 10px 0 10px;
+    margin-block-start: 5px;
+    background: white;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 35%;
+}
+
+.slider-bullet-list a {
+    display: inline-block;
+    block-size: 15px;
+    inline-size: 15px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    background: #D3D3D3;
+    transition: all 0.5s;
+}
+
+.slider-bullet-list a:hover {
+    background: #601A39;
+}
+
+/*  --------- "UN EVENTO MEMORABLE" BANNER --------- */
+
+.un-evento-memorable {
+    inline-size: 100%;
+    block-size: 320px;
+    position: relative;
+    margin-block-end: 120px;
+}
+
+.un-evento-memorable img {
+    position: absolute;
+    filter: brightness(0.7);
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.un-evento-memorable-container {
+    inline-size: 90%;
+    margin: auto;
+    text-align: center;
+    padding-block: 20px;
+    position: relative;
+}
+
+.un-evento-memorable h1 {
+    font-size: 2.5em;
+    margin-block-start: 80px;
+    margin-block-end: 27px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 70px;
+    color: white;
+    white-space: nowrap;
+}
+
+.un-evento-memorable a {
+    padding: 7px 70px;
+    font-size: 1.1em;
+}
+
+/*  --------- ESCENARIOS --------- */
+
+.escenarios {
+    margin-block-end: 120px;
+}
+
+.escenarios-container {
+    inline-size: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.escenarios-container p {
+    inline-size: 65%;
+    margin: auto;
+    margin-block-end: 47px;
+}
+
+.escenarios-galleria-container img {
+    inline-size: 100%;
+    margin-block-end: 10px;
+}
+
+/*  --------- PREGUNTAS --------- */
+
+.preguntas {
+    block-size: 420px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.preguntas-imagen {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    object-position: left top;
+}
+
+.preguntas-container {
+    position: relative;
+    border: 5px solid white;
+    inline-size: 99%;
+    block-size: 99%;
+    margin: auto; 
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.preguntas-contenido {
+    margin-block-start: 50px;
+}
+
+.preguntas-container h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-block-end: 10px;
+}
+
+.preguntas-container p {
+    color: #601A39;
+    margin-block-end: 30px;
+}
+
+.numeros-contacto {
+    background: gray;
+    max-inline-size: 300px;
+    block-size: 50px;
+    border-radius: 30px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-block-end: 10px;
+    display: flex;
+    padding-block-start: 10px;
+    justify-content: center;
+}
+
+.numeros-contacto:nth-child(1n) {
+    background: #516E3C;
+}
+
+.numeros-contacto:nth-child(2n) {
+    background: #601A39;
+}
+
+.numeros-contacto-iconos {
+    inline-size: 20px;
+    block-size: 20px;
+    margin-inline-end: 10px;
+    margin-block-start: 2px;
+}
+
+.numeros-contacto p {
+    color: white;
+    margin: 0;
+}
+
+/*  --------- FOOTER --------- */
+
+footer {
+    block-size: 550px;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 80px 50px 0 50px;
+}
+
+.footer-container {
+    color: white;
+    font-size: 0.9em;
+    block-size: 430px;
+}
+
+.footer-contacto {
+    display: inline-block;
+    inline-size: 40%;
+}
+
+.footer-container h4 {
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.footer-icon-container {
+    display: inline-block;
+    inline-size: 20px;
+}
+
+.contacto-item {
+    margin-block-end: 20px;
+}
+
+.contacto-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-ubicacion {
+    display: inline-block;
+    inline-size: 55%;
+    vertical-align: top;
+}
+
+.footer-ubicacion p {
+    display: inline-block;
+    inline-size: 80%;
+    margin: 0;
+}
+
+.footer-ubicacion .footer-icon-container {
+    vertical-align: top;
+}
+
+hr {
+    margin-block-start: 50px;
+    margin-block-end: 40px;
+    inline-size: 100%;
+    block-size: 2px;
+    border: 0;
+    background: #A78D6B;
+}
+
+.footer-logo {
+    inline-size: 150px;
+}
+
+.footer-info-adicional {
+    position: relative;
+    block-size: 160px;
+}
+
+.footer-logo {
+    position: absolute;
+    inset-block-end: 0;
+}
+
+.footer-info-adicional p {
+    inline-size: 33%;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    margin: 0;
+}
+
+.footer-info-adicional a {
+    color: #A78D6B;
+    text-decoration: none;
+}
+
 
 /*  --------- MEDIA QUERY ESCRITORIO --------- */
 
@@ -212,7 +531,7 @@ body {
     /*  --------- INSTALACIONES --------- */
 
     .instalaciones {
-        block-size: 938px;
+        margin-block-start: 120px;
     }
 
     /* Reducir el tamaño del parrafo */
@@ -228,5 +547,173 @@ body {
         margin-inline-end: 15px;
     }
     
+    /*  --------- SLIDER --------- */
+
+    scroll-container {
+        block-size: 450px;
+        margin: auto;
+        /* overflow: auto; */
+    }
+
+    scroll-page {
+        position: relative;
+        margin-block-start: -5px;
+    }
+
+    scroll-container .imagen-principal {
+        inline-size: 50%;
+        block-size: 456px;
+    }
+
+    .slider-info {
+        block-size: 456px;
+        inline-size: 55%;
+        margin: 0;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .slider-info-container {
+        padding-block-start: 150px;
+        padding-inline-end: 50px;
+        font-size: 1.2em;
+    }
+
+    /*  --------- "UN EVENTO MEMORABLE" BANNER --------- */
+
+    .un-evento-memorable {
+        block-size: 250px;
+    }
+
+    .un-evento-memorable h1 {
+        margin-block: 40px 27px;
+        font-size: 3em;
+    }
+
+    /*  --------- ESCENARIOS --------- */
+
+    .escenarios-galleria-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 10px;
+        padding: 10px;
+    }
     
+    .escenarios-galleria-container img {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+    }
+    
+    #escenario-1 {
+        grid-row-start: span 2;
+    }
+    
+    #escenario-2 {
+        grid-column-start: span 2;
+    }
+
+    /*  --------- PREGUNTAS --------- */
+
+    .preguntas-container {
+        margin-inline-start: 0;
+        text-align: left;
+    }
+
+    .preguntas-descripcion {
+        inline-size: 300px;
+    }
+
+    .preguntas-contenido {
+        margin-inline-start: 100px;
+    }
+
+    .numeros-contacto  {
+        margin-inline-start: 0;
+    }
+
+    .preguntas-imagen {
+        object-position: 0 0px;
+    }
+
+    /*  --------- FOOTER --------- */
+
+    footer {
+        block-size: 500px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 80px 200px;
+    }
+    
+    .footer-container {
+        block-size: 350px;
+        color: white;
+        font-size: 0.9em;
+    }
+    
+    .footer-contacto {
+        display: inline-block;
+        inline-size: 20%;
+    }
+    
+    .footer-container h4 {
+        margin: 0 0 40px 0;
+        text-transform: uppercase;
+    }
+    
+    .footer-icon-container {
+        display: inline-block;
+        inline-size: 20px;
+    }
+    
+    .contacto-item {
+        margin-block-end: 20px;
+    }
+    
+    .contacto-item a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-ubicacion {
+        display: inline-block;
+        inline-size: 55%;
+        vertical-align: top;
+    }
+    
+    .footer-ubicacion p {
+        display: inline-block;
+        inline-size: 68%;
+        margin: 0;
+    }
+    
+    .footer-ubicacion .footer-icon-container {
+        vertical-align: top;
+    }
+    
+    hr {
+        margin-block-start: 50px;
+        margin-block-end: 40px;
+        inline-size: 100%;
+        block-size: 2px;
+        border: 0;
+        background: #A78D6B;
+    }
+
+    .footer-info-adicional {
+        block-size: 80px;
+    }
+
+    .footer-logo {
+        position: absolute;
+        inset-block-end: 0;
+    }
+    
+    .footer-info-adicional p {
+        inline-size: 33%;
+        position: absolute;
+        inset-inline-end: 0;
+        inset-block-end: 0;
+    }
 }
