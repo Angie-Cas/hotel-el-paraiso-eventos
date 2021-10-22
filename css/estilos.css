@@ -1,125 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /*  --------- CABECERA --------- */
 
 /* Contenedor general */
 .cabecera {
-    block-size: 939px;
-    background: url("../img/cabecera.jpg") no-repeat;
-    background-position: 75%;
+    block-size: 700px;
+    inline-size: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.40)), url(../img/cabecera.jpg);
     background-size: cover;
+    background-position: center;
     margin: 0;
     position: relative;
-    overflow: hidden6
+    overflow: hidden;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.banner {
+/* .banner {
     block-size: 939px;
     inline-size: 100%;
     position: absolute;
     object-fit: cover;
     filter: brightness(0.9);
-}
-
-/* Overley de banner */
-/* .cabecera::after {
-    content: '';
-    display: block;
-    inline-size: 100%;
-    block-size: 100%;
-    background: black;
-    opacity: 0.07;
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
 } */
 
 /* Contenedor de contenido */
 .cabecera-wrapper {
-    inline-size: 70%;
-    block-size: 938px;
-    margin: auto;
     text-align: center;
     color: white;
-    z-index: 2;
+    /* z-index: 2; */
     position: relative;
-}
-
-/* Wrapper de logo para modificar su width percentage respecto a si mismo */
-.hotel-paraiso-logo-wrapper {
-    display: inline-block;
-    inline-size: 280px;
+    padding-inline: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    block-size: 100%;
+    inline-size: 100%;
 }
 
 /* Logo */
 .hotel-paraiso-logo {
-    margin-block-start: 43px;
-    inline-size: 70%;
+    margin-block-start: 40px;
+    max-inline-size: 120px;
 }
 
 /* Wrapper de "Un lugar especial" */
 .cabecera-texto-1-wrapper {
-    margin: auto;
-    display: block;
-    padding-block-start: 100px;
+    margin-block-start: 100px;
+    min-inline-size: 500px;
+    block-size: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.cabecera-p-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 40%;
+    block-size: 100%;
+    border: 1px solid yellow;
 }
 
 /* "Un lugar especial" */
-.cabecera-texto-1 {
-    font-size: 1.57em;
+.cabecera-p-wrapper p {
+    display: inline-flex;
+    font-size: 1.3em;
     text-transform: uppercase;
     margin: 0;
-    padding-inline: 100px;
-    position: relative;
-    display: inline-block;
+    text-align: center;
 }
 
-/* Lineas de decoracion */
- .cabecera-texto-1::before {
-    content: '';
-    display: inline-block;
-    inline-size: 50px;
-    block-size: 2px;
-    background: white;
-    position: absolute;
-    inset-block-start: 50%;
-    inset-inline-start: 0px;
+.cabecera-lineas {
+    display: inline-flex;
+    inline-size: 15%;
+    align-items: center;
 }
 
-.cabecera-texto-1::after {
-    content: '';
-    display: block;
-    inline-size: 50px;
-    block-size: 2px;
-    background: white;
-    position: absolute;
-    inset-inline-end: 0;
-    inset-block-end: 50%;
+
+#linea-1 {
+    justify-content: right;
 }
 
 /* "Tu evento en el paraiso" */
 .cabecera-texto-2 {
-    font-size: 3.68em;
+    font-size: 3.5em;
     font-style: italic;
     font-weight: 800;
-    margin-block: 10px 108px;
-    line-height: 70px;
+    margin-block: 0;
     color: white;
+    border: 1px solid red;
 }
 
 /* Boton de "Contactanos" */
 .cabecera-boton {
-    background: transparent;
     border: 3px solid white;
     border-radius: 50px;
-    padding: 20px 124px;
+    padding: 10px 30px;
+    position: absolute;
+    inset-block-end: 100px;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 1.15em;
@@ -128,7 +123,8 @@ body {
 }
 
 .cabecera-boton:hover {
-    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -172,12 +168,27 @@ h2::after {
     padding-inline: 30px;
 }
 
-.instalaciones-wrapper img {
-    margin-block-start: 20px;
-    border: 0;
-    position: relative;
-    filter: brightness(0.9);
+.movil-slider {
+    inline-size: 100%;
+    block-size: 500px;
+    overflow: hidden;
+}
 
+.movil-slider-wrap {
+    display: flex;
+    inline-size: 400%;
+    block-size: 100%;
+    margin-inline-start: -100%;
+}
+
+.movil-slider-item {
+    inline-size: 100%;
+}
+
+.instalaciones-wrapper img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
 }
 
 /*  --------- SLIDER --------- */
@@ -265,7 +276,7 @@ scroll-page {
 
 .un-evento-memorable {
     inline-size: 100%;
-    block-size: 320px;
+    block-size: 280px;
     position: relative;
     margin-block-end: 120px;
 }
@@ -289,13 +300,11 @@ scroll-page {
 
 .un-evento-memorable h1 {
     font-size: 2.5em;
-    margin-block-start: 80px;
+    margin-block-start: 10%;
     margin-block-end: 27px;
     font-style: italic;
     font-weight: 800;
-    line-height: 70px;
     color: white;
-    white-space: nowrap;
 }
 
 .un-evento-memorable a {
@@ -310,7 +319,7 @@ scroll-page {
 }
 
 .escenarios-container {
-    inline-size: 70%;
+    inline-size: 100%;
     margin: auto;
     text-align: center;
 }
@@ -321,15 +330,34 @@ scroll-page {
     margin-block-end: 47px;
 }
 
+.escenarios-galleria-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 10px;
+}
+
 .escenarios-galleria-container img {
     inline-size: 100%;
-    margin-block-end: 10px;
+    margin-block-end: 5px;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+#escenario-1 {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+#escenario-2 {
+    grid-column-start: span 2;
 }
 
 /*  --------- PREGUNTAS --------- */
 
 .preguntas {
-    block-size: 420px;
+    block-size: 500px;
     position: relative;
     overflow: hidden;
     padding: 30px;
@@ -509,16 +537,20 @@ hr {
 }
 
 
+/*  --------- MEDIA QUERY TABLET --------- */
+
+@media (min-width: 600px) {
+    .cabecera-texto-2 {
+        font-size: 4.7em;
+    }
+}
+
+
 /*  --------- MEDIA QUERY ESCRITORIO --------- */
 
 @media (min-width: 1024px) {
 
     /*  --------- CABECERA --------- */
-
-    /* Centrar imagen de cabecera */
-    /* .cabecera {
-        background-position: center;
-    } */
 
     /* Reducir tamaño del contenedor */
     .cabecera-wrapper {
@@ -527,36 +559,105 @@ hr {
 
     /* Aumentar el tamaño del logo */
     .hotel-paraiso-logo {
-        inline-size: 100%;
+        max-inline-size: 120px;
     }
 
-    /* Generar espacio entre el logo y el texto de cabecera */
-    .cabecera-texto-1-wrapper {
-        padding-block-start: 188px;
+    .cabecera-p-wrapper {
+        min-inline-size: 300px;
+        font-size: 1.3em;
     }
 
     /* Generar espacio entre el titulo y el boton */
     .cabecera-texto-2 {
-        margin-block-end: 131px;
+        margin-block: 1% 15%;
+        font-size: 4.2em;
+        line-height: 90px;
+    }
+
+    .cabecera-boton {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 10px 30px;
     }
 
     /*  --------- INSTALACIONES --------- */
 
-    .instalaciones {
+    /* .instalaciones {
         margin-block-start: 120px;
-    }
+    } */
 
     /* Reducir el tamaño del parrafo */
-    .instalaciones-wrapper p {
+    /* .instalaciones-wrapper p {
         width: 60%;
         margin: auto;
-    }
+    } */
 
     /* Acomodar las imagenes en linea */
-    .instalaciones-wrapper img {
+    /* .instalaciones-wrapper img {
         inline-size: 20%;
         margin-block-start: 65px;
         margin-inline-end: 15px;
+    } */
+
+    /* Contenedor general*/
+    .instalaciones {
+        margin-block-end: 121px;
+        margin-block-start: 120px;
+    }
+
+    /* Contenedor de contenido */
+    .instalaciones-wrapper {
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.57em;
+        font-weight: normal;
+        position: relative;
+        display: inline-block;
+        margin-block-start: 0;
+    }
+
+    h2::after {
+        content: '';
+        display: inline-block;
+        inline-size: 50px;
+        height: 3px;
+        background: #601A39;
+        position: absolute;
+        inset-block-start: 100%;
+        inset-inline-start: 0;
+    }
+
+    .instalaciones-wrapper p {
+        font-size: 1em;
+        margin-block-end: 50px;
+        color: #707070;
+        padding-inline: 30px;
+    }
+
+    .movil-slider {
+        inline-size: 100%;
+        block-size: 500px;
+        overflow: hidden;
+    }
+
+    .movil-slider-wrap {
+        display: flex;
+        inline-size: 400%;
+        block-size: 100%;
+        margin-inline-start: -100%;
+    }
+
+    .movil-slider-item {
+        inline-size: 100%;
+    }
+
+    .instalaciones-wrapper img {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
     }
     
     /*  --------- SLIDER --------- */
@@ -604,12 +705,18 @@ hr {
 
     /*  --------- ESCENARIOS --------- */
 
+    .escenarios-container p {
+        inline-size: 35%;
+    }
+
     .escenarios-galleria-container {
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 0.5fr);
         gap: 10px;
         padding: 10px;
+        inline-size: 70%;
     }
     
     .escenarios-galleria-container img {
@@ -620,6 +727,7 @@ hr {
     
     #escenario-1 {
         grid-row-start: span 2;
+        grid-column-start: span 1;
     }
     
     #escenario-2 {
