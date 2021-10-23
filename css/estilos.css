@@ -332,6 +332,7 @@ h2::after {
     color: white;
     text-decoration: none;
     margin-block-start: -50px;
+    transition: all 0.8s;
 }
 
 .un-evento-memorable a:hover {
@@ -480,14 +481,23 @@ h2::after {
     align-items: center;
     font-size: 0.9em;
     margin-block-end: 10px;
+    transition: all 0.8s;
 }
 
 .numeros-contacto:nth-child(1n) {
     background: #516E3C;
 }
 
+.numeros-contacto:nth-child(1n):hover {
+    background: #74955c;
+}
+
 .numeros-contacto:nth-child(2n) {
     background: #601A39;
+}
+
+.numeros-contacto:nth-child(2n):hover {
+    background: #964d6d;
 }
 
 .numeros-contacto-iconos {
@@ -497,9 +507,9 @@ h2::after {
     margin-block-start: 2px;
 }
 
-.numeros-contacto p {
+.numeros-contacto a {
     color: white;
-    margin: 0;
+    text-decoration: none;
 }
 
 /*  --------- FOOTER --------- */
