@@ -92,7 +92,13 @@ body {
 
 
 #linea-1 {
-    justify-content: right;
+    /* justify-content: right; */
+    position: relative
+}
+
+#linea-1 svg {
+    position: absolute;
+    inset-inline-end: 0; 
 }
 
 /* "Tu evento en el paraiso" */
