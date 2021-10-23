@@ -37,6 +37,13 @@
             <h2>Instalaciones</h2>
             <p>Contamos con excelentes instalaciones y todos los servicios para fiestas de XV años, bautizos, baby showers, graduaciones, cumpleaños o aniversarios, y así garantizar que su evento sea memorable.</p>
 
+            <div class="instalaciones-fotos">
+                <img src="img/instalaciones-1.jpg" alt="Camino pacífico" title="Camino pacífico">
+                <img src="img/instalaciones-2.jpg" alt="Mesa rodeada de luces" title="Mesa rodeada de luces">
+                <img src="img/instalaciones-3.jpg" alt="Pareja cariñosa" title="Pareja cariñosa">
+                <img src="img/instalaciones-4.jpg" alt="Mesa elegante" title="Mesa elegante">
+            </div>
+
             <div class="movil-slider">
                 <div class="movil-slider-wrap">
 
@@ -63,54 +70,63 @@
 
     <!-- Slider -->
     <section class="slider">
-        <scroll-container>
-            <scroll-page>
-                <img src="img/slider-1.jpg" alt="" class="imagen-principal" id="slider-pagina-1">
-                <div class="slider-info">
-                    <div class="slider-info-container">
-                        <img src="img/slider-icono-1.png" alt="" class="icono">
-                        <p>Donde la naturaleza, la familia y los amigos serán testigos del amor.</p>
-                    </div>
-                </div>
-            </scroll-page>
 
-            <scroll-page>
-                <img src="img/slider-2.jpg" alt="" class="imagen-principal" id="slider-pagina-2">
-                <div class="slider-info">
-                    <div class="slider-info-container">
-                        <img src="img/slider-icono-2.png" alt="" class="icono">
-                        <p>La adrenalina, el lugar y el espacio son la opción ideal para disfrutar al extremo.</p>
-                    </div>
-                </div>
-            </scroll-page>
+        <div class="scroll-container">
 
-            <scroll-page>
-                <img src="img/slider-3.jpg" alt="" class="imagen-principal" id="slider-pagina-3">
-                <div class="slider-info">
-                    <div class="slider-info-container">
-                        <img src="img/slider-icono-3.png" alt="" class="icono">
-                        <p>Gozar a tus amigos, familia o pareja con una excelente carne asada o algo más romántico.</p>
-                    </div>
-                </div>
-            </scroll-page>
+            <div class="scroll-container-wrap">
 
-            <scroll-page>
-                <img src="img/slider-4.jpg" alt="" class="imagen-principal" id="slider-pagina-4">
-                <div class="slider-info">
-                    <div class="slider-info-container">
-                        <img src="img/slider-icono-4.png" alt="" class="icono">
-                        <p>La tranquilidad y el ambiente son la combinación perfecta para desconectarse.</p>
+                    <div class="scroll-page-container">
+                        <img src="img/slider-1.jpg" alt="" class="imagen-principal">
+                        <div class="slider-info">
+                            <div class="slider-info-container">
+                                <img src="img/slider-icono-1.png" alt="" class="icono">
+                                <p>Donde la naturaleza, la familia y los amigos serán testigos del amor.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </scroll-page>
-        </scroll-container>
+
+                    <div class="scroll-page-container">
+                        <img src="img/slider-2.jpg" alt="" class="imagen-principal">
+                        <div class="slider-info">
+                            <div class="slider-info-container">
+                                <img src="img/slider-icono-2.png" alt="" class="icono">
+                                <p>La adrenalina, el lugar y el espacio son la opción ideal para disfrutar al extremo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-page-container">
+                        <img src="img/slider-3.jpg" alt="" class="imagen-principal">
+                        <div class="slider-info">
+                            <div class="slider-info-container">
+                                <img src="img/slider-icono-3.png" alt="" class="icono">
+                                <p>Gozar a tus amigos, familia o pareja con una excelente carne asada o algo más romántico.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-page-container">
+                        <img src="img/slider-4.jpg" alt="" class="imagen-principal">
+                        <div class="slider-info">
+                            <div class="slider-info-container">
+                                <img src="img/slider-icono-4.png" alt="" class="icono">
+                                <p>La tranquilidad y el ambiente son la combinación perfecta para desconectarse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            
+        </div>
 
          <!-- Navegador de slider -->
-        <div class="slider-bullet-list">
-            <a href="#slider-pagina-1"></a>
-            <a href="#slider-pagina-2"></a>
-            <a href="#slider-pagina-3"></a>
-            <a href="#slider-pagina-4"></a>
+        <div class="slider-bullet-list-container">
+            <div class="slider-bullet-list">
+                <div id="slider-pagina-1" class="slider-bullet" onclick="boton1()"></div>
+                <div id="slider-pagina-2" class="slider-bullet" onclick="boton2()"></div>
+                <div id="slider-pagina-3" class="slider-bullet" onclick="boton3()"></div>
+                <div id="slider-pagina-4" class="slider-bullet" onclick="boton4()"></div>
+            </div>
         </div>
     </section>  <!-- / slider -->
 
@@ -119,7 +135,7 @@
          <img src="img/un-evento-memorable-flores.jpg" alt="">
          <div class="un-evento-memorable-container">
              <h1>Un evento memorable.</h1>
-             <a href="#" class="cabecera-boton">Contáctanos</a>
+             <a href="#" >Contáctanos</a>
          </div>
      </section>
 
@@ -147,6 +163,25 @@
                  </div>
 
              </div>
+
+             <div class="escenarios-slider">
+                 <div class="escenarios-slider-container">
+                     <div class="escenarios-slider-item">
+                        <img src="img/escenarios-1.png" alt="">
+                     </div>
+                     <div class="escenarios-slider-item">
+                        <img src="img/escenarios-2.png" alt="">
+                     </div>
+                     <div class="escenarios-slider-item">
+                        <img src="img/escenarios-3.png" alt="">
+                     </div>
+                     <div class="escenarios-slider-item">
+                        <img src="img/escenarios-4.png" alt="">
+                     </div>
+                 </div>
+             </div>
+
+
          </div>
      </section>
 
