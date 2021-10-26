@@ -59,7 +59,7 @@ body {
 
 /* Wrapper de "Un lugar especial" */
 .cabecera-texto-1-wrapper {
-    margin-block-start: 100px;
+    margin-block-start: 120px;
     min-inline-size: 500px;
     block-size: 10%;
     display: flex;
@@ -78,7 +78,7 @@ body {
 /* "Un lugar especial" */
 .cabecera-p-wrapper p {
     display: inline-flex;
-    font-size: 1.3em;
+    font-size: 1.25em;
     text-transform: uppercase;
     margin: 0;
     text-align: center;
@@ -103,20 +103,22 @@ body {
 
 /* "Tu evento en el paraiso" */
 .cabecera-texto-2 {
-    font-size: 3.5em;
+    margin-block-start: -15px;
+    font-size: 3.4em;
     font-style: italic;
-    font-weight: 800;
-    margin-block: 0;
+    font-weight: normal;
+    padding: 0;
     color: white;
+
 }
 
 /* Boton de "Contactanos" */
 .cabecera-boton {
     border: 3px solid white;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 5px 42px;
     position: absolute;
-    inset-block-end: 100px;
+    inset-block-end: 180px;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 1.15em;
@@ -206,7 +208,7 @@ h2::after {
 
 .scroll-container {
     /* border: 5px solid red; */
-    block-size: 600px;
+    block-size: 450px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -231,7 +233,7 @@ h2::after {
 }
 
 .imagen-principal {
-    block-size: 310px;
+    block-size: 230px;
     inline-size: 100%;
     object-fit: cover;
     /* border: 2px solid red; */
@@ -240,7 +242,7 @@ h2::after {
 .slider-info-container {
     /* border: 1px solid red; */
     box-sizing: border-box;
-    block-size: 305px;
+    block-size: 225px;
     inline-size: 100%;
     background: #f2ece6;
     display: flex;
@@ -328,7 +330,7 @@ h2::after {
     font-size: 1.1em;
     border: 3px solid white;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 5px 42px;
     color: white;
     text-decoration: none;
     margin-block-start: -50px;
@@ -410,7 +412,7 @@ h2::after {
 /*  --------- PREGUNTAS --------- */
 
 .preguntas {
-    block-size: 500px;
+    block-size: 390px;
     position: relative;
     overflow: hidden;
     padding: 30px;
@@ -456,12 +458,12 @@ h2::after {
 .preguntas-container h2 {
     font-size: 1.5em;
     font-weight: normal;
-    margin-block-end: 10px;
+    margin-block: 0;
 }
 
 .preguntas-container p {
     color: #601A39;
-    margin-block-end: 30px;
+    margin-block-end: 15px;
 }
 
 .preguntas-container h2::after {
@@ -515,10 +517,11 @@ h2::after {
 /*  --------- FOOTER --------- */
 
 footer {
-    block-size: 700px;
+    block-size: 500px;
     background-color: black;
     box-sizing: border-box;
-    padding: 80px 50px 0 50px;
+    padding: 50px 30px 0 30px;
+    overflow: hidden;
 }
 
 .footer-container {
@@ -529,12 +532,12 @@ footer {
 
 .footer-contacto {
     display: inline-block;
-    inline-size: 100%;
-    margin: auto;
+    inline-size: 45%;
+    /* margin: auto; */
 }
 
 .footer-container h4 {
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
     text-transform: uppercase;
 }
 
@@ -553,9 +556,9 @@ footer {
 }
 
 .footer-ubicacion {
-    margin-block-start: 20px;
-    display: block;
-    inline-size: 100%;
+    margin-inline-start: 10px;
+    display: inline-block;
+    inline-size: 50%;
     vertical-align: top;
 }
 
@@ -570,8 +573,7 @@ footer {
 }
 
 hr {
-    margin-block-start: 50px;
-    margin-block-end: 40px;
+    margin-block-start: 40px;
     inline-size: 100%;
     block-size: 2px;
     border: 0;
@@ -579,21 +581,25 @@ hr {
 }
 
 .footer-logo {
-    inline-size: 150px;
+    /* inline-size: 120px; */
+    block-size: 60px;
 }
 
 .footer-info-adicional {
     position: relative;
-    block-size: 160px;
+    block-size: 140px;
+    display: flex;
+    align-items: center;
+
 }
 
 .footer-logo {
     /* position: absolute; */
-    inset-block-end: 0;
+    /* inset-block-end: 0; */
 }
 
 .footer-info-adicional p {
-    inline-size: 100%;
+    inline-size: 50%;
     position: absolute;
     inset-inline-end: 0;
     inset-block-end: 0;
@@ -606,12 +612,39 @@ hr {
 }
 
 
+/*  --------- MEDIA QUERY -280px --------- */
+
+@media (max-width: 330px) {
+    .footer-ubicacion {
+        inline-size: 100%;
+        margin-block-start: 10px;
+        margin-inline: 0;
+    }
+
+    .footer-contacto {
+        inline-size: 100%;
+    }
+
+    hr {
+        margin-block-start: 20px;
+    }
+
+    .footer-logo {
+        block-size: 45px;
+    }
+
+    .footer-info-adicional {
+        block-size: 90px;
+        font-size: 0.8em;
+    
+    }
+    
+}
+
+
 /*  --------- MEDIA QUERY TABLET --------- */
 
 @media (min-width: 600px) {
-    .cabecera-texto-2 {
-        font-size: 4.7em;
-    }
 
     .instalaciones-fotos {
         display: flex;
@@ -641,6 +674,25 @@ hr {
         max-inline-size: 400px;
     }
 
+    .preguntas {
+        block-size: 340px;
+    }
+
+    footer {
+        block-size: 330px;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 40px 40px;
+    }
+
+    hr {
+        margin-block-start: 10px;
+
+    }
+
+    .footer-info-adicional {
+        block-size: 70px;
+    }
 }
 
 
@@ -665,17 +717,8 @@ hr {
         font-size: 1.3em;
     }
 
-    /* Generar espacio entre el titulo y el boton */
     .cabecera-texto-2 {
-        margin-block: 1% 15%;
-        font-size: 4.2em;
         line-height: 90px;
-    }
-
-    .cabecera-boton {
-    border: 3px solid white;
-    border-radius: 50px;
-    padding: 10px 30px;
     }
 
     /*  --------- INSTALACIONES --------- */
@@ -758,7 +801,7 @@ hr {
     }
 
     .imagen-principal {
-        block-size: 610px;
+        block-size: 450px;
     }
 
     .slider-info {
@@ -766,7 +809,7 @@ hr {
     }
     
     .slider-info-container {
-        block-size: 610px;
+        block-size: 455px;
         padding: 100px;
         inline-size: 100%;
     }
@@ -832,7 +875,8 @@ hr {
     }
 
     .preguntas-contenido {
-        margin-inline-start: 100px;
+        margin-inline-start: 50px;
+        margin-block: 20px 10px;
     }
 
     .numeros-contacto  {
@@ -843,13 +887,22 @@ hr {
         object-position: 0 0px;
     }
 
+    .preguntas-descripcion p {
+        margin-block: 10px 0;
+    }
+
+    .numeros-contacto {
+        block-size: 40px;
+    
+    }
+
     /*  --------- FOOTER --------- */
 
     footer {
-        block-size: 500px;
+        block-size: 330px;
         background-color: black;
         box-sizing: border-box;
-        padding: 80px 200px;
+        padding: 40px 200px;
     }
     
     .footer-container {
@@ -860,11 +913,11 @@ hr {
     
     .footer-contacto {
         display: inline-block;
-        inline-size: 20%;
+        inline-size: 30%;
     }
     
     .footer-container h4 {
-        margin: 0 0 40px 0;
+        margin: 0 0 30px 0;
         text-transform: uppercase;
     }
     
@@ -885,7 +938,7 @@ hr {
     
     .footer-ubicacion {
         display: inline-block;
-        inline-size: 55%;
+        inline-size: 65%;
         vertical-align: top;
         margin-block-start: 0;
     }
@@ -901,8 +954,7 @@ hr {
     }
     
     hr {
-        margin-block-start: 50px;
-        margin-block-end: 40px;
+        margin-block-start: 10px;
         inline-size: 100%;
         block-size: 2px;
         border: 0;
@@ -910,7 +962,7 @@ hr {
     }
 
     .footer-info-adicional {
-        block-size: 80px;
+        block-size: 70px;
     }
 
     .footer-logo {
