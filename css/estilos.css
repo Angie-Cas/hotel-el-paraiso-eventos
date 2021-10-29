@@ -46,13 +46,13 @@ body {
 
 /* Logo */
 .hotel-paraiso-logo {
-    margin-block-start: 40px;
-    max-inline-size: 120px;
+    margin-block-start: 30px;
+    max-inline-size: 150px;
 }
 
 /* Wrapper de "Un lugar especial" */
 .cabecera-texto-1-wrapper {
-    margin-block-start: 120px;
+    margin-block-start: 110px;
     min-inline-size: 500px;
     block-size: 10%;
     display: flex;
@@ -72,7 +72,7 @@ body {
 /* "Un lugar especial" */
 .cabecera-p-wrapper p {
     display: inline-flex;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     margin: 0;
     text-align: center;
@@ -97,7 +97,7 @@ body {
 /* "Tu evento en el paraiso" */
 .cabecera-texto-2 {
     margin-block-start: -25px;
-    font-size: 3.4em;
+    font-size: 55px;
     font-style: italic;
     font-weight: 600;
     padding: 0;
@@ -111,8 +111,9 @@ body {
     border: 3px solid white;
     border-radius: 50px;
     padding: 5px 42px;
-    position: absolute;
-    inset-block-end: 180px;
+    margin-block-start: 20px;
+    /* position: absolute;
+    inset-block-end: 180px; */
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 1.15em;
@@ -175,7 +176,7 @@ h2::after {
 .movil-slider {
     margin: auto;
     inline-size: 93%;
-    block-size: 500px;
+    block-size: 450px;
     overflow: hidden;
     position: relative;
 }
@@ -198,7 +199,7 @@ h2::after {
 }
 
 .movil-slider-arrows {
-    inline-size: 94%;
+    inline-size: 97%;
     font-size: 3em;
     display: flex;
     font-family: monospace;
@@ -206,7 +207,7 @@ h2::after {
     position: absolute;
     inset-block-start: 0;
     opacity: 0.5;
-    margin-block-start: 230px;
+    margin-block-start: 200px;
     padding-inline: 5px;
 }
 
@@ -437,7 +438,7 @@ h2::after {
 }
 
 .escenarios-slider-arrows {
-    inline-size: 95%;
+    inline-size: 97%;
     font-size: 3em;
     display: flex;
     font-family: monospace;
@@ -520,10 +521,9 @@ inset-inline-end: 0;
 }
 
 .numeros-contacto {
-    background: gray;
     max-inline-size: 300px;
     min-inline-size: 180px;
-    block-size: 50px;
+    block-size: 40px;
     border-radius: 30px;
     margin: auto;
     box-sizing: border-box;
@@ -561,6 +561,7 @@ inset-inline-end: 0;
 .numeros-contacto a {
     color: white;
     text-decoration: none;
+    margin-block-start: -5px;
 }
 
 /*  --------- FOOTER --------- */
@@ -599,11 +600,13 @@ footer {
 
 .contacto-item {
     margin-block-end: 20px;
+    display: flex;
 }
 
 .contacto-item a {
     color: white;
     text-decoration: none;
+    margin-inline-start: 5px;
 }
 
 .footer-ubicacion {
@@ -632,8 +635,8 @@ hr {
 }
 
 .footer-logo {
-    /* inline-size: 120px; */
-    block-size: 60px;
+    block-size: 50px;
+    margin-block-start: 50px;
 }
 
 .footer-info-adicional {
@@ -717,6 +720,10 @@ hr {
 
 @media (min-width: 600px) {
 
+    .cabecera-texto-1-wrapper {
+        margin-block-start: 150px;
+    }
+
     .instalaciones-fotos {
         display: flex;
         justify-content: space-evenly;
@@ -792,18 +799,9 @@ hr {
         inline-size: 60%;
     }
 
-    /* Aumentar el tamaño del logo */
-    .hotel-paraiso-logo {
-        max-inline-size: 120px;
-    }
-
     .cabecera-p-wrapper {
         min-inline-size: 10px;
         font-size: 15px;
-    }
-
-    .cabecera-texto-2 {
-        line-height: 90px;
     }
 
     /*  --------- INSTALACIONES --------- */
@@ -960,7 +958,7 @@ hr {
     }
 
     .preguntas-contenido {
-        margin-inline-start: 10px;
+        margin-inline-start: 50px;
         margin-block: 20px 10px;
     }
 
@@ -1015,7 +1013,7 @@ hr {
     }
     
     .contacto-item {
-        margin-block-end: 20px;
+        margin-block-end: 10px;
     }
     
     .contacto-item a {
@@ -1041,7 +1039,7 @@ hr {
     }
     
     hr {
-        margin-block-start: 10px;
+        margin-block-start: 30px;
         inline-size: 100%;
         block-size: 2px;
         border: 0;
