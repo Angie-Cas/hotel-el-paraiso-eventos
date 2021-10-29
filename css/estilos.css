@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 html {
     overflow-x: hidden;
@@ -72,7 +72,7 @@ body {
 /* "Un lugar especial" */
 .cabecera-p-wrapper p {
     display: inline-flex;
-    font-size: 1.25em;
+    font-size: 15px;
     text-transform: uppercase;
     margin: 0;
     text-align: center;
@@ -96,10 +96,10 @@ body {
 
 /* "Tu evento en el paraiso" */
 .cabecera-texto-2 {
-    margin-block-start: -15px;
+    margin-block-start: -25px;
     font-size: 3.4em;
     font-style: italic;
-    font-weight: normal;
+    font-weight: 600;
     padding: 0;
     color: white;
     inline-size: 95%;
@@ -475,7 +475,7 @@ inset-inline-end: 0;
     left:0;
     height:100%;
     width:100%;
-    background: rgba(204,122,103,0.1);
+    background: rgba(204,122,103,0.15);
     z-index: 1;
 }
 
@@ -664,7 +664,9 @@ hr {
 
     .cabecera-p-wrapper {
         max-inline-size: 30%;
+        font-size: 15px;
     }
+    
 
     .cabecera-boton {
         inset-block-end: 120px;
@@ -796,8 +798,8 @@ hr {
     }
 
     .cabecera-p-wrapper {
-        min-inline-size: 300px;
-        font-size: 1.3em;
+        min-inline-size: 10px;
+        font-size: 15px;
     }
 
     .cabecera-texto-2 {
@@ -1023,7 +1025,7 @@ hr {
     
     .footer-ubicacion {
         display: inline-block;
-        inline-size: 45%;
+        inline-size: 40%;
         vertical-align: top;
         margin-block-start: 0;
     }
