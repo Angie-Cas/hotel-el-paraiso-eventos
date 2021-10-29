@@ -170,10 +170,14 @@ h2::after {
     padding-inline: 30px;
 }
 
+/* movil slider */
+
 .movil-slider {
-    inline-size: 100%;
+    margin: auto;
+    inline-size: 93%;
     block-size: 500px;
     overflow: hidden;
+    position: relative;
 }
 
 .movil-slider-wrap {
@@ -191,6 +195,29 @@ h2::after {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+}
+
+.movil-slider-arrows {
+    inline-size: 94%;
+    font-size: 3em;
+    display: flex;
+    font-family: monospace;
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    opacity: 0.5;
+    margin-block-start: 230px;
+    padding-inline: 5px;
+}
+
+.movil-slider-arrows div {
+    cursor: pointer;
+}
+
+.arrow-2 {
+    display: block;
+    position: absolute;
+    inset-inline-end: 0;
 }
 
 /*  --------- SLIDER --------- */
@@ -382,8 +409,14 @@ h2::after {
     display: none;
 }
 
+/* Movil slider */
+
 .escenarios-slider {
-    block-size: 600px;
+    block-size: 250px;
+    inline-size: 93%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
 }
 
 .escenarios-slider-container {
@@ -401,6 +434,28 @@ h2::after {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+}
+
+.escenarios-slider-arrows {
+    inline-size: 95%;
+    font-size: 3em;
+    display: flex;
+    font-family: monospace;
+    color: white;
+    position: absolute;
+    inset-block-start: 40%;
+    inset-inline-start: 2%;
+    opacity: 0.5;
+}
+
+.escenarios-slider-arrows div {
+cursor: pointer;
+}
+
+.escenarios-arrow-2 {
+display: block;
+position: absolute;
+inset-inline-end: 0;
 }
 
 /*  --------- PREGUNTAS --------- */
@@ -522,6 +577,8 @@ footer {
     color: white;
     font-size: 0.9em;
     block-size: 430px;
+    max-inline-size: 1320px;
+    margin: auto;
 }
 
 .footer-contacto {
@@ -585,11 +642,6 @@ hr {
     display: flex;
     align-items: center;
 
-}
-
-.footer-logo {
-    /* position: absolute; */
-    /* inset-block-end: 0; */
 }
 
 .footer-info-adicional p {
@@ -693,6 +745,20 @@ hr {
 
     .preguntas {
         block-size: 340px;
+    }
+
+    .escenarios-slider {
+        block-size: 400px;
+    }
+
+    .escenarios-slider-arrows {
+        inline-size: 95%;
+        inset-block-start: 45%;
+        inset-inline-start: 2%;
+    }
+
+    .escenarios-slider-container img {
+        object-position: center;
     }
 
     footer {
@@ -892,7 +958,7 @@ hr {
     }
 
     .preguntas-contenido {
-        margin-inline-start: 50px;
+        margin-inline-start: 10px;
         margin-block: 20px 10px;
     }
 
@@ -916,10 +982,12 @@ hr {
     /*  --------- FOOTER --------- */
 
     footer {
+        font-size: 12px;
         block-size: 330px;
         background-color: black;
         box-sizing: border-box;
         padding: 40px 200px;
+        margin: auto;
     }
     
     .footer-container {
@@ -930,7 +998,7 @@ hr {
     
     .footer-contacto {
         display: inline-block;
-        inline-size: 30%;
+        inline-size: 20%;
     }
     
     .footer-container h4 {
@@ -955,7 +1023,7 @@ hr {
     
     .footer-ubicacion {
         display: inline-block;
-        inline-size: 65%;
+        inline-size: 45%;
         vertical-align: top;
         margin-block-start: 0;
     }
