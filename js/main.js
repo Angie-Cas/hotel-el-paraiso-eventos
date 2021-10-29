@@ -42,7 +42,7 @@ arrow1.addEventListener("click", function(){
 
 setInterval(function() {
     Next();
-}, 4000);
+}, 5000);
 
 
 // 2DO SLIDER
@@ -116,6 +116,6 @@ escArrow1.addEventListener("click", function(){
 
 setInterval(function() {
     NextInst();
-}, 4000);
+}, 5000);
 
 
